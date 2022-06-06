@@ -1,18 +1,3 @@
-
-CREATE TABLE Pizza (
-Id int Primary Key Identity NOT NULL,
-Name nvarchar(20) NOT NULL,
-Price int NOT NULL,
-SizeId int NOT NULL,
-OrderId int NOT NULL
-)
-
-CREATE TABLE [Order] (
-Id int Primary Key Identity NOT NULL,
-IsDelivered bit NOT NULL,
-UserId int Foreign Key References [User](Id) NOT NULL
-
-)
 ALTER TABLE Pizza 
 Add  Constraint fk_OrderId 
 Foreign Key (OrderId)
