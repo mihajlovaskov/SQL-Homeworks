@@ -1,12 +1,4 @@
 
-CREATE TABLE [User] (
-Id int Primary Key Identity NOT NULL,
-FirstName nvarchar(30) NOT NULL,
-LastName nvarchar(30) NOT NULL,
-Adress nvarchar(30) NOT NULL,
-PhoneNumber nvarchar(20) NOT NULL
-)
-
 CREATE TABLE Pizza (
 Id int Primary Key Identity NOT NULL,
 Name nvarchar(20) NOT NULL,
